@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="scripts/gestorpreguntas.js" type="module" ></script>
 </head>
 <body>
 
-    <form>
+    <form id="form">
         <label for="question">Pregunta</label>
         <input type="text" id="question">
         <br>
@@ -16,8 +18,9 @@
         <label for="rad2">Falso</label>
         <input id="rad2" type="radio" name="vof" value="falso">
         <br>
-        <input type="number" max="9" min="0">
-
+        <input id="puntuacion" type="number" max="9" min="0">
+        <input type="button" value="Atrás" id="atras">
+        <input type="button" value="Grabar" id="grabar" >
 
     </form>
 
